@@ -11,7 +11,7 @@ import java.util.List;
 @RestController
 public class PersonController {
     @Autowired
-    PersonRepository personRepository;
+    private PersonRepository personRepository;
     @GetMapping("/person")
     public List<Person> getAllPerson(){
         return personRepository.findAll();
